@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Poppins";
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+:root {
+	--text-color-white: rgb(207, 227, 234);
+    --text-color-green: rgb(83, 255, 173);
+    --back-color-dark: rgb(32, 38, 50);
+    --back-color-light: rgb(72, 81, 97);
+    --margin-top-bottom: 30px;
+}
+.mainDiv {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--back-color-dark);
+    color: var(--text-color-white);
+    text-align: center;
+}
+.centralDiv {
+    box-sizing: border-box;
+    padding: 25px;
+    width: 45%;
+    height: 60%;
+    border-radius: 20px;
+    background-color: var(--back-color-light);
+    box-shadow: 24px 29px 4px 49px rgba(24, 26, 31, 0.9);
+    -webkit-box-shadow: 24px 29px 4px 49px rgba(32, 33, 39, 0.9);
+    -moz-box-shadow: 24px 29px 4px 49px rgba(34, 36, 43, 0.9);
+    position: relative;
+}
+.adviceHeading {
+    margin: var(--margin-top-bottom) 0;
+    padding: 0;
+    color: var(--text-color-green);
+}
+.adviceBody {
+    margin: 0;
+    padding: 0;
+    color: var(--text-color-white);
+    font-size: 1.8rem;
+}
+.horizontal {
+    margin: 50px 0 0;
+    padding: 0;
+    border-style: none;
+    border-top: 3px solid var(--text-color-white);
+    width: 92%;
+    height: 2px;
+    position: absolute;
+    bottom: 24%;
+}
+.pauseDiv {
+    background-color: var(--back-color-light);
+    box-sizing: border-box;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    position: absolute;
+    left: 46.9%;
+    bottom: 17%;
+}
+.pauseIcon {
+    font-size: 1.7rem;
+    color: var(--text-color-white);
+}
+.diceButton {
+    background-color: var(--text-color-green);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border-style: none;
+    box-sizing: border-box;
+    position: absolute;
+    left: 45%;
+    bottom: -10%;
+}
+.diceButton:active {
+    bottom: -11%;
+}
+.diceIcon {
+    color: var(--back-color-dark);
+    font-size: 2rem;
+}
+
+/* MEDIA QUERY FOR IPAD  */
+@media screen and (max-width: 1024px) {
+    .centralDiv {
+        width: 80%;
+        height: 45%;
+        box-shadow: 10px 10px 1px 29px rgba(24, 26, 31, 0.9);
+        -webkit-box-shadow: 10px 10px 1px 29px rgba(32, 33, 39, 0.9);
+        -moz-box-shadow: 10px 10px 1px 29px rgba(34, 36, 43, 0.9);
+    }
+    .horizontal {
+        bottom: 23%;
+    }
+    .diceButton {
+        bottom: -8%;
+    }
+    .diceButton:active {
+        bottom: -9%;
+    }
+}
+
+/* MEDIA QUERY FOR PHONE  */
+@media screen and (max-width: 576px) {
+    .centralDiv {
+        width: 90%;
+        height: 65%;
+        box-shadow: 4px 10px 1px 29px rgba(24, 26, 31, 0.9);
+        -webkit-box-shadow: 4px 10px 1px 29px rgba(32, 33, 39, 0.9);
+        -moz-box-shadow: 4px 10px 1px 29px rgba(34, 36, 43, 0.9);
+    }
+    .adviceBody {
+        font-size: 1.5rem;
+    }
+    .horizontal {
+        width: 85%;
+    }
+    .pauseDiv {
+        left: 44%;
+    }
+    .diceButton {
+        left: 40%;
+    }
+}
